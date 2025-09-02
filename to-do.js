@@ -4,13 +4,14 @@ const loadTodo = () => {
     .then((res) => res.json())
     .then((data) => displayTodo(data));
 };
+// -------async--------//
+// const loadTodo =async () => {
+//   const url = "https://jsonplaceholder.typicode.com/todos";
+//   const res=await fetch(url)
+//   const data= await res.json()
+//     displayTodo(data);
+// };
 
-// {
-//     "userId": 2,
-//     "id": 25,
-//     "title": "voluptas quo tenetur perspiciatis explicabo natus",
-//     "completed": true
-// }
 const displayTodo = (todos) => {
   const todoCont = document.getElementById("todo-cont");
   todoCont.innerHTML = "";
