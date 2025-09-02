@@ -25,14 +25,18 @@ const loadData = () => {
     .then((data) => console.log(data));
 };
 
-const loadPosts = () => {
-  const url = "https://jsonplaceholder.typicode.com/posts";
-  fetch(url)
-    .then((res) => res.json())
-    .then((post) => display(post));
-};
+// const loadPosts = () => {
+//   const url = "https://jsonplaceholder.typicode.com/posts";
+//   fetch(url)
+//     .then((res) => res.json())
+//     .then((json) => {
+//       console.log(json);
+//       display(json);
+//     });
+// };
 
-const display = (posts)=>{
-    console.log(posts);
-    
-}
+// const display = (posts) => {
+//   posts.forEach((post) => {
+//     console.log(post);
+//   });
+// };
