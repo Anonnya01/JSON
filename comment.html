@@ -3,25 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JSON API</title>
+    <title>Comments</title>
     <style>
       body {
         background-color: rgb(236, 182, 209);
         color: purple;
       }
-      button {
-        background-color: hotpink;
-        color: purple;
-        padding: 5px 10px;
-        margin: 5px;
-        border: none;
-        border-radius: 7px;
-      }
-      #post-cont {
+
+      #cmnt-cont {
         max-width: 1160px;
         margin: 40px auto;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
         row-gap: 30px;
       }
@@ -36,17 +29,15 @@
       .box p {
         text-align: justify;
       }
+      h1 {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
-    <button onclick="loadData()">Load Data</button>
-    <button onclick="loadPosts()">Load Posts</button>
-
-    <div id="post-cont"></div>
-
+    <h1>All Comments</h1>
     <div id="cmnt-cont"></div>
 
-    <script src="index.js"></script>
-    <script src="post.js"></script>
+    <script src="comment.js"></script>
   </body>
 </html>

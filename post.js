@@ -31,4 +31,4 @@ const displayPost = (posts) => {
   });
 };
 
-loadPosts()
+// loadPosts()
