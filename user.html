@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(171, 222, 242);
+        color: rgb(26, 136, 180);;
+      }
+      #user-cont{
+         max-width: 1160px;
+         margin: 40px auto;
+         display: grid;
+         grid-template-columns: repeat(3,1fr) ;
+         grid-gap: 20px;
+         row-gap: 30px;
+      }
+       h1{
+        text-align: center;
+        text-decoration: double;
+       }
+      
+      .user-box {
+        border: 1px solid;
+        /* display: flex; */
+        /* align-items: start; */
+        gap: 15px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        border-radius: 8px;
+      }
+      .user-box h4{
+        text-decoration: underline;
+      }
+      .user-box a{
+        text-decoration: underline;
+      }
+    
+      span{
+        color:rgb(26, 136, 180);
+        text-decoration: none;
+      }
+      
+  
+    </style>
+  </head>
+  <body>
+    <h1>All Users</h1>
+    <div id="user-cont">
+
+
+    </div>
+    <script src="user.js"></script>
+  </body>
+</html>
